@@ -121,6 +121,9 @@ source venv/bin/activate  # Windows: venv\Scripts\activate
 # Install in development mode
 pip install -e ".[dev]"
 
+# Install validator plugin (required for running tests)
+pip install -e plugins/chemvcs-validator/
+
 # Install pre-commit hooks
 pre-commit install
 ```
